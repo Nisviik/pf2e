@@ -25,7 +25,12 @@
                 "key": "FlatModifier",
                 "label": "Aura of Despair (vs. fear)",
                 "predicate": [
-                    "item:trait:fear"
+                    {
+                      "or": [
+                        "item:trait:fear",
+                        "fear"
+                      ]
+                    }
                 ],
                 "selector": "saving-throw",
                 "type": "circumstance",
